@@ -10,44 +10,44 @@ import { ChevronRight } from 'lucide-react';
 function FaqSection() {
     const faqs = [
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, nunc at malesuada facilisis, odio tortor pretium nisl, id tincidunt purus arcu eu quam. Integer nec libero sed augue tincidunt aliquet."
+            question: "How does Pixign AI work?",
+            answer: "Pixign AI uses advanced artificial intelligence to transform your sketches or descriptions into professional logos. Simply upload a sketch or describe your vision, and our AI will generate multiple logo options for you to choose from. You can then customize colors, fonts, and other elements to make it perfect for your brand."
         },
         {
-            question: "Quisque vehicula justo nec?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed justo non nulla suscipit viverra. Ut commodo, orci a aliquet venenatis, ligula urna consequat nulla, in malesuada mauris odio id quam."
+            question: "What file formats can I download my logo in?",
+            answer: "You can download your logos in both PNG and SVG formats. PNG files are perfect for web use and social media, while SVG files are vector-based and ideal for printing and scaling to any size without losing quality."
         },
         {
-            question: "Pellentesque habitant morbi tristique?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis orci nec nunc tempus interdum. Nulla facilisi. Suspendisse potenti. Vivamus vel felis nec orci pulvinar hendrerit. Curabitur ac felis in libero scelerisque."
+            question: "Do I own the rights to the logos I create?",
+            answer: "Yes! With both our Pro Monthly and Pro Yearly plans, you receive a commercial license for all logos you create. This means you have full ownership and can use your logos for any business or personal purpose."
         },
         {
-            question: "Vestibulum ante ipsum primis?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac justo eget lorem suscipit tempor. Curabitur a urna non eros porttitor tincidunt. Donec gravida, mauris et porttitor gravida, nulla nisi viverra ligula, id faucibus magna est vel nulla."
+            question: "Can I use Pixign AI without any design experience?",
+            answer: "Absolutely! Pixign AI is designed to be user-friendly for everyone, regardless of design experience. Our intuitive interface and AI-powered tools make it easy to create professional logos. Plus, we provide tutorials and guides to help you get the best results."
         },
         {
-            question: "Nam at nisi vitae erat?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod leo eu libero faucibus, id pharetra metus venenatis. Phasellus nec diam a massa fermentum pellentesque. Vivamus suscipit, urna nec varius cursus, quam urna aliquet urna, eget sollicitudin nisi turpis non enim."
+            question: "What's the difference between the Monthly and Yearly plans?",
+            answer: "Both plans give you access to all core features, including unlimited logo generations, 15 preset styles, 2D/3D generations, 4300+ fonts, and more. The Yearly plan offers a $50 discount and additional benefits like feature requests and a yearly license."
         },
         {
-            question: "Nam at nisi vitae erat?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod leo eu libero faucibus, id pharetra metus venenatis. Phasellus nec diam a massa fermentum pellentesque. Vivamus suscipit, urna nec varius cursus, quam urna aliquet urna, eget sollicitudin nisi turpis non enim."
+            question: "Can I cancel my subscription at any time?",
+            answer: "Yes, you can cancel your subscription at any time. If you cancel, you'll continue to have access to all features until the end of your current billing period. You'll also retain the rights to any logos you created during your subscription."
         },
         {
-            question: "Nam at nisi vitae erat?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod leo eu libero faucibus, id pharetra metus venenatis. Phasellus nec diam a massa fermentum pellentesque. Vivamus suscipit, urna nec varius cursus, quam urna aliquet urna, eget sollicitudin nisi turpis non enim."
-        },
+            question: "How many logo variations can I generate?",
+            answer: "With our Pro plans, you have unlimited logo generations. You can create as many variations as you need until you find the perfect design for your brand. Each generation gives you multiple options to choose from."
+        }
     ];
 
     return (
-        <section className="bg-white/80 py-20" id='faq'>
+        <section className='bg-[#373F47] py-20' id='faq'>
             <div className="max-w-sm sm:max-w-2xl mx-auto">
-                <h1 className="text-3xl font-bold text-center mb-12 capitalize">Frequently Asked Questions</h1>
+                <h1 className="text-3xl font-bold text-center mb-12 capitalize text-[#F8F8F8]">Frequently Asked Questions</h1>
 
                 <div className="space-y-4">
                     {faqs.map((faq, index) => {
                         return (
-                            <div key={index} className="bg-slate-100/50 p-4 px-7 rounded-lg hover:shadow">
+                            <div key={index} className="bg-[#3E363F] p-4 px-7 rounded-lg hover:shadow">
                                 <Accordion
                                     className='flex w-full flex-col'
                                     transition={{ type: 'spring', stiffness: 120, damping: 20 }}
@@ -63,16 +63,16 @@ function FaqSection() {
                                     }}
                                 >
                                     <AccordionItem value='getting-started' className='py-2'>
-                                        <AccordionTrigger className='w-full py-0.5 text-left text-zinc-950'>
+                                        <AccordionTrigger className='w-full py-0.5 text-left text-[#F8F8F8]'>
                                             <div className='flex items-center'>
-                                                <ChevronRight className='h-4 w-4 text-zinc-950 transition-transform duration-200 group-data-[expanded]:rotate-90' />
-                                                <div className='ml-2 text-zinc-950 text-xl font-semibold'>
+                                                <ChevronRight className='h-4 w-4 text-[#F8F8F8] transition-transform duration-200 group-data-[expanded]:rotate-90' />
+                                                <div className='ml-2 text-[#F8F8F8] text-xl font-semibold'>
                                                     {faq.question}
                                                 </div>
                                             </div>
                                         </AccordionTrigger>
                                         <AccordionContent className='origin-left'>
-                                            <p className='pl-6 pr-2 leading-relaxed text-zinc-500'>
+                                            <p className='pl-6 pr-2 leading-relaxed text-[#F8F8F8]'>
                                                 {faq.answer}
                                             </p>
                                         </AccordionContent>
@@ -86,4 +86,5 @@ function FaqSection() {
         </section>
     )
 }
+
 export default FaqSection

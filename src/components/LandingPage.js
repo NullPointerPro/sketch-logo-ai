@@ -10,16 +10,22 @@ import Testimonials from './landingPageComponents/Testimonials';
 import AsSeenOn from './landingPageComponents/AsSeenOn';
 
 function LandingPage() {
+    const showAdditionalSections = false; // Set to true to show AsSeenOn and Testimonials
+
     return (
         <>
             <HeroSection />
             <BeforeAfter />
             <FeatureDisplay />
-            <DemoSection />
+            {showAdditionalSections && (
+                <>
+                    <AsSeenOn />
+                    <Testimonials />
+                    <DemoSection />
+                </>
+            )}
             <PricingSection />
             <FaqSection />
-            <AsSeenOn />
-            <Testimonials />
             <FinalPush />
             <Footer />
         </>
