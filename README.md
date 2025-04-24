@@ -34,10 +34,3 @@ Pixign AI helps you turn a few words or sketches into polished brand identities.
 - Hosting: Vercel + AWS
 - DB: Supabase (PostgreSQL)
 
-## 📦 How to Install (For Local Development)
-
-```bash
-git clone https://github.com/yourusername/pixign-ai.git
-cd pixign-ai
-npm install
-npm run dev
