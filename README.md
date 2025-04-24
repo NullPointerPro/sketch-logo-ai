@@ -1,35 +1,43 @@
-# Preview [LINK](https://saas-landing-page-pied-seven.vercel.app)
+# Pixign AI
 
-![Project demo](/public/demo.gif)
+**Pixign AI** is your AI-powered design assistant that generates stunning, brand-ready logos and design assets in seconds. Built for founders, freelancers, and creators who need fast, professional visuals – without hiring a designer.
 
-## Project Structure
+## 🚀 What is Pixign AI?
 
-The main components of the landing page are:
+Pixign AI helps you turn a few words or sketches into polished brand identities. Whether you're launching a startup, building a side project, or just testing ideas – Pixign makes it dead simple to:
 
-- HeroSection
-- BeforeAfter
-- FeatureDisplay
-- DemoSection
-- PricingSection
-- FaqSection
-- AsSeenMarquee
-- Testimonials
-- FinalPush
-- Footer
+- Generate high-quality logos with AI
+- Customize colors, fonts, and layouts
+- Download assets in SVG/PNG formats
+- Iterate quickly with zero design skills
 
-## Getting Started
+## 🎯 Who it's for
 
-To run this project locally:
+- **Founders** who want a clean brand presence before launch  
+- **Marketers** who need quick visuals for campaigns  
+- **No-code builders** shipping fast MVPs  
+- **Anyone** who’s tired of generic logo templates
 
-1. Click on the green button top right corner `Use this template`
-2. `git clone` to your local
-3. Install dependencies with `npm install`
-4. Start the development server with `npm run dev`
-5. Open `localhost:3000`
+## ✨ Features
 
-## Stack
+- 🧠 **AI-Powered Logo Generation** – Smart, unique logo ideas from text prompts
+- 🎨 **In-Browser Customization** – Adjust layout, font, icons, and colors live
+- 📦 **Asset Export** – Download high-resolution SVGs and PNGs instantly
+- 🗂️ **Project Management** – Save and organize logos for multiple projects
+- 💬 **Prompt Refinement** – Iterate with your AI assistant for better results
 
-- Next.js
-- Tailwind CSS
-- Shadcn UI library
-- Lucide icons
+## 🛠️ Tech Stack
+
+- Frontend: React (Next.js)
+- Backend: Node.js, Express
+- AI Engine: OpenAI + custom fine-tuning
+- Hosting: Vercel + AWS
+- DB: Supabase (PostgreSQL)
+
+## 📦 How to Install (For Local Development)
+
+```bash
+git clone https://github.com/yourusername/pixign-ai.git
+cd pixign-ai
+npm install
+npm run dev
